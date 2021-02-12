@@ -5,7 +5,6 @@ import { NextPage } from "next";
 
 // #region Local Imports
 import { withTranslation } from "@Server/i18n";
-import { Container, TopText, ApodButton } from "@Styled/Home";
 import Link from "next/link";
 // #endregion Local Imports
 
@@ -15,12 +14,10 @@ import { IErrorPage } from "@Interfaces";
 
 const Custom404: NextPage<IErrorPage.IProps> = ({ t }) => {
     return (
-        <Container>
-            <TopText>{t("common:NotFound")}</TopText>
-            <Link href="/">
-                <ApodButton>{t("common:BackHome")}</ApodButton>
-            </Link>
-        </Container>
+        <div>
+            <h1>{t("common:NotFound")}</h1>
+            <Link href="/">{t("common:BackHome")}</Link>
+        </div>
     );
 };
 

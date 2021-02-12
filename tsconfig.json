@@ -31,7 +31,6 @@
       "@Services": ["src/Services"],
       "@Services/*": ["src/Services/*"],
       "@Static/*": ["public/static/*"],
-      "@Styled/*": ["src/Styled/*"],
       "@Test/*": ["test/*"]
     }
   },

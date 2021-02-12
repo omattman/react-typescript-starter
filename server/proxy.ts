@@ -1,6 +1,6 @@
 const devProxy: { [key: string]: {} } = {
     "/api": {
-        target: "https://api.nasa.gov",
+        target: "https://api.nasa.gov/",
         pathRewrite: { "^/api": "" },
         changeOrigin: true,
     },

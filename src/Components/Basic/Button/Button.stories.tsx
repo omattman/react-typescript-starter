@@ -7,7 +7,6 @@ import { action } from "@storybook/addon-actions";
 // #endregion Global Imports
 
 // #region Local Imports
-import { Apod, ApodButton } from "@Styled/Home";
 import { Button } from "./index";
 // #endregion Local Imports
 
@@ -17,14 +16,10 @@ export default {
 };
 
 export const Default = () => (
-    <Apod>
-        <ApodButton>
-            <Button
-                disabled={boolean("Disabled", false)}
-                onClick={action("button-click")}
-            >
-                Hello Button
-            </Button>
-        </ApodButton>
-    </Apod>
+    <Button
+        disabled={boolean("Disabled", false)}
+        onClick={action("button-click")}
+    >
+        Hello Button
+    </Button>
 );
